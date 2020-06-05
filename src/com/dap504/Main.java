@@ -8,6 +8,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-	// write your code here
+
+        TableTennisPlayer tableTennisPlayer = new TableTennisPlayer("Bob", "Jones",10);
+        tableTennisPlayer.showPlayerDetails();
+
+        BadmintonPlayer badmintonPlayer = new BadmintonPlayer();
+        badmintonPlayer.firstName = "Clare";
+        badmintonPlayer.showPlayerDetails();
+
     }
 }
