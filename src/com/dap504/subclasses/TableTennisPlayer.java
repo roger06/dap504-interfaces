@@ -1,6 +1,9 @@
-package com.dap504;
+package com.dap504.subclasses;
 
-public class TableTennisPlayer implements RaquetPlayer {
+import com.dap504.Player;
+import com.dap504.interfaces.TestInterface;
+
+public class TableTennisPlayer extends Player {
 
     String firstName, lastName;
     int serverPower;
@@ -11,14 +14,14 @@ public class TableTennisPlayer implements RaquetPlayer {
 
 
     public TableTennisPlayer(String firstName, String lastName, int serverPower) {
+        super(firstName,lastName);
         this.firstName = firstName;
         this.lastName = lastName;
         this.serverPower = serverPower;
 
     }
 
-    public TableTennisPlayer() {
-    }
+    
 
     public static  void showNumPlayers(){
 
@@ -46,6 +49,12 @@ public class TableTennisPlayer implements RaquetPlayer {
     @Override
     public String displayPlayerCountry() {
         return null;
+    }
+
+    public void showName(TestInterface testInterface) {
+
+//        System.out.println(testInterface.getClass().getMethods());
+
     }
 
 }

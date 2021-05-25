@@ -1,11 +1,16 @@
-package com.dap504;
+package com.dap504.subclasses;
 
-public class BadmintonPlayer extends GeneralPlayer implements RaquetPlayer {
+import com.dap504.Player;
+
+public class SquashPlayer extends Player {
+
+
+    public SquashPlayer(String firstName, String lastName) {
+        super(firstName, lastName);
+    }
 
     @Override
     public void showPlayerDetails() {
-
-        System.out.println("For a Badminton player - first name = " + this.firstName);
 
     }
 
