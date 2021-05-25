@@ -1,11 +1,11 @@
 package com.dap504;
 
-import com.dap504.interfaces.TestInterface;
+import com.dap504.interfaces.GeneralPlayer;
 
 /**
  * super / general class
  */
-public  class Player implements TestInterface.GeneralPlayer {
+public  class Player implements GeneralPlayer {
 
     public  String firstName, lastName, country;
 
@@ -29,6 +29,7 @@ public  class Player implements TestInterface.GeneralPlayer {
     public String displayPlayerCountry() {
         return null;
     }
+
 
 }
 

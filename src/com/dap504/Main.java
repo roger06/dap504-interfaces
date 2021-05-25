@@ -1,6 +1,6 @@
 package com.dap504;
 
-import com.dap504.interfaces.TestInterface;
+import com.dap504.interfaces.GeneralPlayer;
 import com.dap504.subclasses.BadmintonPlayer;
 import com.dap504.subclasses.TableTennisPlayer;
 
@@ -17,16 +17,15 @@ public class Main {
         tableTennisPlayer.showPlayerDetails();
 
         BadmintonPlayer badmintonPlayer = new BadmintonPlayer("Trev", "Jones");
-        badmintonPlayer.firstName = "Clare";
+
         badmintonPlayer.showPlayerDetails();
 
-        tableTennisPlayer.showName(new TestInterface() {
 
-            @Override
-            public void showName(TableTennisPlayer ttp) {
-                System.out.println("name = " + ttp.firstName);
-            }
-        });
 
-    }
-}
+
+    } // end main()
+
+
+
+
+} //end class

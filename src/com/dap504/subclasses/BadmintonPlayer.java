@@ -11,14 +11,11 @@ public class BadmintonPlayer extends Player  {
     @Override
     public void showPlayerDetails() {
 
-        System.out.println("For a Badminton player - first name = " + this.firstName);
+         System.out.println("Badminton player : "+ this.firstName + " " +this.lastName);
+
 
     }
 
-    @Override
-    public void showShotPower(int shotPower) {
-
-    }
 
     @Override
     public String displayPlayerCountry() {

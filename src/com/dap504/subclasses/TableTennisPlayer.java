@@ -1,11 +1,10 @@
 package com.dap504.subclasses;
 
 import com.dap504.Player;
-import com.dap504.interfaces.TestInterface;
 
 public class TableTennisPlayer extends Player {
 
-    String firstName, lastName;
+
     int serverPower;
 
 
@@ -21,12 +20,10 @@ public class TableTennisPlayer extends Player {
 
     }
 
-    
 
     public static  void showNumPlayers(){
 
         System.out.println(numPlayers);
-
 
     }
 
@@ -38,7 +35,7 @@ public class TableTennisPlayer extends Player {
     @Override
     public void showPlayerDetails() {
 
-        System.out.println("First name : "+ this.firstName + " Last name: " +this.lastName);
+        System.out.println("Table tennis player : "+ this.firstName + " " +this.lastName);
     }
 
     @Override
@@ -49,12 +46,6 @@ public class TableTennisPlayer extends Player {
     @Override
     public String displayPlayerCountry() {
         return null;
-    }
-
-    public void showName(TestInterface testInterface) {
-
-//        System.out.println(testInterface.getClass().getMethods());
-
     }
 
 }
