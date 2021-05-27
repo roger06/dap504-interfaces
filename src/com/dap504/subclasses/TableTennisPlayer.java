@@ -2,6 +2,10 @@ package com.dap504.subclasses;
 
 import com.dap504.Player;
 
+/**
+ * sub class of player
+ */
+
 public class TableTennisPlayer extends Player {
 
 
@@ -13,7 +17,7 @@ public class TableTennisPlayer extends Player {
 
 
     public TableTennisPlayer(String firstName, String lastName, int serverPower) {
-        super(firstName,lastName);
+        super(firstName,lastName, "Table tennis player");
         this.firstName = firstName;
         this.lastName = lastName;
         this.serverPower = serverPower;
@@ -21,31 +25,12 @@ public class TableTennisPlayer extends Player {
     }
 
 
-    public static  void showNumPlayers(){
-
-        System.out.println(numPlayers);
-
-    }
 
 
     public void  getServerPower() {
-        System.out.println(serverPower); ;
+        System.out.println(serverPower);
     }
 
-    @Override
-    public void showPlayerDetails() {
 
-        System.out.println("Table tennis player : "+ this.firstName + " " +this.lastName);
-    }
-
-    @Override
-    public void showShotPower(int shotPower) {
-
-    }
-
-    @Override
-    public String displayPlayerCountry() {
-        return null;
-    }
 
 }

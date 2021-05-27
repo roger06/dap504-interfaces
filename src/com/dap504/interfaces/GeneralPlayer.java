@@ -1,16 +1,14 @@
 package com.dap504.interfaces;
 
+/**
+ * Interface to force set up of a player
+ */
 public interface GeneralPlayer {
 
-    public static final int MAXGAMES = 12;
-    int age = 0;
+    int MAXGAMES = 12;   // static and final by default
 
-
-    public void showPlayerDetails();
-
-    public void showShotPower(int shotPower);
-
-    public String displayPlayerCountry();
-
+    String getFirstName();
+    String getLastName();
+    String getPlayerType();
 
 }
